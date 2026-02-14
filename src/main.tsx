@@ -9,6 +9,7 @@ import JobList from './pages/JobList.tsx'
 import Layout from './components/Layout.tsx'
 import RankedCvs from './pages/RankedCvs.tsx'
 import UploadedCvs from './pages/UploadedCvs.tsx'
+import { AppProvider } from './context/AppProvider.tsx'
 
  const router = createBrowserRouter([
   {
@@ -36,6 +37,8 @@ import UploadedCvs from './pages/UploadedCvs.tsx'
 ])
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <AppProvider>
     <RouterProvider router={router} />
+    </AppProvider>
   </StrictMode>,
 )
