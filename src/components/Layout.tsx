@@ -46,6 +46,16 @@ const Layout = () => {
               label="New Jobs"
               onClick={() => setSidebarOpen(false)}
             />
+            <NavItem
+              to="/public-jos"
+              label="Public Jobs"
+              onClick={() => setSidebarOpen(false)}
+            />
+            <NavItem
+              to="/new-jobs"
+              label="New Jobs"
+              onClick={() => setSidebarOpen(false)}
+            />
           </nav>
         </aside>
 

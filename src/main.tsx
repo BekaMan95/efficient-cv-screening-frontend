@@ -11,6 +11,7 @@ import RankedCvs from './pages/RankedCvs.tsx'
 import UploadedCvs from './pages/UploadedCvs.tsx'
 import CreateJobForm from './pages/CreateJobForm.tsx'
 import { AppProvider } from './context/AppProvider.tsx'
+import PublicJobBoard from './pages/PublicJobBoard.tsx'
 
  const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ import { AppProvider } from './context/AppProvider.tsx'
       {
         path:"new-jobs",
         element :<CreateJobForm/>
+      },
+      {
+        path:"public-jos",
+        element :<PublicJobBoard/>
       }
     ]
   }
