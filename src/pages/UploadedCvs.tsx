@@ -27,6 +27,7 @@ const columns: Column<Cv>[] = [
     key: "cv_url",
     header: "CV URL",
   },
+  
   {
     key: "status",
     header: "Action",

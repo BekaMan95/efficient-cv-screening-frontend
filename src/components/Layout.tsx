@@ -42,13 +42,8 @@ const Layout = () => {
               onClick={() => setSidebarOpen(false)}
             />
             <NavItem
-              to="/uploaded-cvs"
-              label="Uploaded CVs"
-              onClick={() => setSidebarOpen(false)}
-            />
-            <NavItem
-              to="/ranked-cvs"
-              label="Ranked CVs"
+              to="/new-jobs"
+              label="New Jobs"
               onClick={() => setSidebarOpen(false)}
             />
           </nav>

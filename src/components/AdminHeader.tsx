@@ -36,9 +36,9 @@ export default function AdminHeader({
       <div className="flex items-center gap-2">
         {rightSlot}
 
-        <button className="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
+        {/* <button className="p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
           <Bell className="w-5 h-5" />
-        </button>
+        </button> */}
 
         {onLogout && (
           <button
