@@ -5,6 +5,8 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Login from './pages/Login.tsx'
 import Admin from './pages/Admin.tsx'
+import JobList from './pages/JobList.tsx'
+import Layout from './components/Layout.tsx'
 
  const router = createBrowserRouter([
   {
@@ -13,7 +15,13 @@ import Admin from './pages/Admin.tsx'
   },
   {
     path: "/",
-    element: (<Admin/>)
+    element: (<Layout/>),
+    children:[
+      {
+        path: "/jobs",
+        element:<JobList/>
+      }
+    ]
   }
 ])
 createRoot(document.getElementById('root')!).render(
