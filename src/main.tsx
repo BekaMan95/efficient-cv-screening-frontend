@@ -7,6 +7,8 @@ import Login from './pages/Login.tsx'
 import Admin from './pages/Admin.tsx'
 import JobList from './pages/JobList.tsx'
 import Layout from './components/Layout.tsx'
+import RankedCvs from './pages/RankedCvs.tsx'
+import UploadedCvs from './pages/UploadedCvs.tsx'
 
  const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ import Layout from './components/Layout.tsx'
       {
         path: "/jobs",
         element:<JobList/>
+      },
+      {
+        path: "/ranked-cvs",
+        element:<RankedCvs/>      
+      },
+      {
+        path: "/uploaded-cvs",
+        element:<UploadedCvs/>      
       }
     ]
   }

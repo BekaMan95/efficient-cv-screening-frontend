@@ -2,6 +2,7 @@
 
 import React from "react"
 import { DataTable, type Column } from "../components/DataTable"
+import { Eye } from "lucide-react"
 
 type Job = {
   id: number
@@ -73,6 +74,17 @@ const columns: Column<Job>[] = [
       >
         {row.status}
       </span>
+    ),
+  },
+  {
+    key: "action",
+    header: "Action",
+    render: (row) => (
+      <div className='flex'>
+        <button>
+          <Eye className='w-4 h-4 mr-1' />
+        </button>
+      </div>
     ),
   },
 ]
